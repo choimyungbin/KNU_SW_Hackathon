@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 import facebook
 
-graph = facebook.GraphAPI(access_token=['EAAF4ktkd47sBABFIziTzFepA1KMFrmKfyBLcPbi5WRJkI7ZBZBW3Ao81txJFnJLux1UsUSx2GF0NJ1qHlGl324xUcELXVLzEKefFqssf8B16BY390RkSRJOZAkenYtedSNjXKTkWisNEV55GHZApxAgrE0uWGtZAtfIwi9wAGJOoseCA3p2x7'])
+graph = facebook.GraphAPI(access_token=['EAAF4ktkd47sBAMfjG9ERICceBRF6FY6uvc9DBeZBvJVL1nmPfGdqxeAGLvWTH97faAg9Q3sue3svoeGdiVUER2mdnFBtAILAIrXZBDZBZCDZB7sO0gTxGZAVrZB1Hw7arY4iD3laz15N5lPR3ZAb4CtMbfAj0LnZAmKpH8Qx8zrQNZAqDzUHkWnAWK'])
 def post(text):
     graph.put_object(parent_object='me', connection_name='feed',
                   message=text)
